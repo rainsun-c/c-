@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "栈", "栈\栈.vcxproj", "{27738039-4743-4D6A-BC0A-5552554C785C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链式栈进制应用", "链式栈进制应用\链式栈进制应用.vcxproj", "{6C710961-CF4C-460A-8A81-46098F3B2195}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组栈", "数组栈\数组栈.vcxproj", "{249FFEB9-8EEB-45F0-BBDF-1864B46C5AAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "寻路问题", "寻路问题\寻路问题.vcxproj", "{1EC436D0-7014-4E2A-9EFC-2F3A8D6EEE25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27738039-4743-4D6A-BC0A-5552554C785C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27738039-4743-4D6A-BC0A-5552554C785C}.Debug|Win32.Build.0 = Debug|Win32
+		{27738039-4743-4D6A-BC0A-5552554C785C}.Release|Win32.ActiveCfg = Release|Win32
+		{27738039-4743-4D6A-BC0A-5552554C785C}.Release|Win32.Build.0 = Release|Win32
+		{6C710961-CF4C-460A-8A81-46098F3B2195}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C710961-CF4C-460A-8A81-46098F3B2195}.Debug|Win32.Build.0 = Debug|Win32
+		{6C710961-CF4C-460A-8A81-46098F3B2195}.Release|Win32.ActiveCfg = Release|Win32
+		{6C710961-CF4C-460A-8A81-46098F3B2195}.Release|Win32.Build.0 = Release|Win32
+		{249FFEB9-8EEB-45F0-BBDF-1864B46C5AAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{249FFEB9-8EEB-45F0-BBDF-1864B46C5AAD}.Debug|Win32.Build.0 = Debug|Win32
+		{249FFEB9-8EEB-45F0-BBDF-1864B46C5AAD}.Release|Win32.ActiveCfg = Release|Win32
+		{249FFEB9-8EEB-45F0-BBDF-1864B46C5AAD}.Release|Win32.Build.0 = Release|Win32
+		{1EC436D0-7014-4E2A-9EFC-2F3A8D6EEE25}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1EC436D0-7014-4E2A-9EFC-2F3A8D6EEE25}.Debug|Win32.Build.0 = Debug|Win32
+		{1EC436D0-7014-4E2A-9EFC-2F3A8D6EEE25}.Release|Win32.ActiveCfg = Release|Win32
+		{1EC436D0-7014-4E2A-9EFC-2F3A8D6EEE25}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
