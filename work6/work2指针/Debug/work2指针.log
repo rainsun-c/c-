@@ -1,0 +1,4 @@
+﻿  指针.c
+D:\2019file\work1\work2指针\指针.c(14,10): warning C4013: “gets”未定义；假设外部返回 int
+D:\2019file\work1\work2指针\指针.c(14,13): warning C4047: “=”:“char *”与“int”的间接级别不同
+  work2指针.vcxproj -> D:\2019file\work1\Debug\work2指针.exe
