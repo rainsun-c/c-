@@ -67,8 +67,18 @@ data mod(data a, data b)
 {
 	return ((int)a % (int)b);
 }
-data calculator(char c, data a, data b,data(*p)(data a, data b))
+data calculator( data a, data b,p1 p)//typedef data(*p1)(data a, data b);
+{//typedef double data;
+	return p(a,b);
+}
+int main()
 {
+	int a = 0;
+	int b = 0;
+	char c = 0;
+	p1 p=NULL;       //typedef data(*p1)(data a, data b);
+	puts("请输入：");
+	scanf("%d %c %d",&a,&c,&b);
 	switch (c)
 	{
 	case '+':
@@ -89,22 +99,63 @@ data calculator(char c, data a, data b,data(*p)(data a, data b))
 	default:
 		break;
 	}
-	if (p == NULL)
-		return -1;
-	
-	return p(a, b);
-}
-int main()
-{
-	int a = 0;
-	int b = 0;
-	char c = 0;
-	p1 p=NULL;
-	puts("请输入：");
-	scanf("%d %c %d",&a,&c,&b);
-	data t=calculator(c,a,b,p);
+	data t=calculator(a,b,p);
 	printf("%lf", t);
 	while (1);
 	return 0;
 }
 #endif
+//函数指针数组实现计算器
+data add(data a, data b)
+{
+	return (a + b);
+}
+data sub(data a, data b)
+{
+	return (a - b);
+}
+data ride(data a, data b)
+{
+	return (a*b);
+}
+data divs(data a, data b)
+{
+
+	return (a / b);
+}
+data mod(data a, data b)
+{
+	return ((int)a % (int)b);
+}
+
+int main()
+{
+	char c = '\0';
+	int a = 0;
+	int b = 0;
+	p1 p[5] = { add, sub,ride, divs, mod };
+	puts("请输入：");
+	scanf("%d %c %d", &a, &c, &b);
+	switch (c)
+	{
+	case '+':
+		printf("%lf", (*p[0])(a,b));
+		break;
+	case '-':
+		printf("%lf", (*p[1])(a, b));
+		break;
+	case '*':
+		printf("%lf", (*p[2])(a, b));
+		break;
+	case '/':
+		printf("%lf", (*p[3])(a, b));
+		break;
+	case '%':
+		printf("%lf", (*p[4])(a, b));
+		break;
+	default:
+		break;
+	}
+	while (1);
+	return 0;
+}

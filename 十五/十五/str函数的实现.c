@@ -6,7 +6,7 @@
 //1，自己实现strchr和strstr
 char* my_strchr(char*p, char p1)
 {
-	assert(p != NULL);
+	assert(p != NULL);//断言，即p不等于NULL，如果是空则报错
 	assert(p1 != NULL);
 	while (*p!='\0')
 	{
@@ -48,7 +48,7 @@ char* my_strstr(char* p,char* p1)
 	}
 	return (char*)-1;
 }
-int main11()
+int main()
 {
 	char str1[] = "bakbvvnd";
 	char str2[] = "ek";
